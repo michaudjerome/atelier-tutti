@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact · ATELIER TUTTI</title><meta name="description" content="Contactez Atelier Tutti pour une création, une taille ou une question.">
+<link rel="canonical" href="https://www.atelier-tutti.com/contact.html">
+<meta property="og:title" content="Contact · ATELIER TUTTI"><meta property="og:description" content="Contactez Atelier Tutti pour une création, une taille ou une question."><meta property="og:image" content="https://www.atelier-tutti.com/img/bracelets-lapis-nacre-2400.jpg">
+<link rel="icon" href="img/logo-atelier-tutti-400.jpg"><link rel="stylesheet" href="style.css"></head>
+<body><header><div class="barre">
+<a class="logo" href="index.html" aria-label="Accueil, Atelier Tutti"><img src="img/logo-atelier-tutti-400.jpg" alt="Atelier Tutti" width="68" height="68"></a>
+<nav aria-label="Navigation principale"><ul><li><a href="creations.html">Créations</a></li><li><a href="galerie.html">Galerie</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html" aria-current=page>Contact</a></li></ul></nav>
+<button class="burger" aria-label="Menu" aria-expanded="false">☰</button></div></header>
+<main>
+<div class="page"><div class="intro"><h1>Nous contacter</h1><p>Une question sur une création, une taille, un cadeau ou une pièce sur mesure ? Écrivez-nous, nous vous répondrons avec plaisir.</p></div>
+<div class="coord"><a href="mailto:contact@atelier-tutti.com">contact@atelier-tutti.com</a><br>Instagram : <a href="https://www.instagram.com/atelier__tutti" rel="noopener">@atelier__tutti</a></div><form class="formulaire " action="contact.php" method="post">
+  <div class="ligne"><label>Prénom <span>(obligatoire)</span><input name="prenom" required autocomplete="given-name"></label>
+  <label>Nom de famille <span>(obligatoire)</span><input name="nom" required autocomplete="family-name"></label></div>
+  <label>E-mail <span>(obligatoire)</span><input type="email" name="email" required autocomplete="email"></label>
+  <label>Message <span>(obligatoire)</span><textarea name="message" rows="6" required maxlength="5000"></textarea></label>
+  <label class="piege" aria-hidden="true">Ne pas remplir<input name="site_web" tabindex="-1" autocomplete="off"></label>
+  <input type="hidden" name="t" value="0">
+  <p class="rgpd">Vos coordonnées servent uniquement à vous répondre. Elles ne sont ni conservées sur ce site ni transmises à des tiers.</p>
+  <button type="submit" class="btn">Envoyer</button>
+  <p class="etat" role="status"></p>
+  <p class="secours">Vous pouvez aussi écrire directement à <a href="mailto:contact@atelier-tutti.com">contact@atelier-tutti.com</a>.</p>
+</form>
+<script>
+(function(){var f=document.querySelector('.formulaire');f.t.value=Math.floor(Date.now()/1000);
+var q=location.search,e=f.querySelector('.etat');
+if(q.indexOf('envoye=1')>-1){e.textContent='Merci, votre message a bien été envoyé. Nous vous répondrons rapidement.';e.className='etat ok';}
+if(q.indexOf('erreur=1')>-1){e.textContent="Le message n'a pas pu être envoyé. Vérifiez les champs, ou écrivez directement à l'adresse ci-dessous.";e.className='etat ko';}})();
+</script></div></main>
+<footer><nav><a href="index.html">Accueil</a><a href="creations.html">Créations</a><a href="galerie.html">Galerie</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a></nav>
+<div><a href="mailto:contact@atelier-tutti.com">contact@atelier-tutti.com</a> · Instagram <a href="https://www.instagram.com/atelier__tutti" rel="noopener">@atelier__tutti</a></div>
+<div class="petit">Bijoux faits main · <a href="mentions-legales.html">Mentions légales</a></div></footer>
+<script>document.querySelector('.burger').onclick=function(){var n=document.querySelector('header nav');var o=n.classList.toggle('ouvert');this.setAttribute('aria-expanded',o);};</script></body></html>
